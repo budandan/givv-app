@@ -4,61 +4,54 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-      <link href='/style.css' rel='stylesheet' type='text/css'>      
+      <link href='/style.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
-          <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 form-div">
-                <br>
-                <h2>Add a Company</h2>
-                <br>
-              <div class="form-group">
-                <label for="example-text-input" class="col-2 col-form-label">Company Name</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" value="Company" id="example-text-input">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="example-text-input" class="col-2 col-form-label">City</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" value="Salt Lake City" id="example-text-input">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="example-text-input" class="col-2 col-form-label">State</label>
-                <div class="col-10">
-                  <input class="form-control" type="text" value="Utah" id="example-text-input">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="example-num-input" class="col-2 col-form-label">Zip Code</label>
-                <div class="col-10">
-                  <input class="form-control" type="num" value="12345" id="example-num-input">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
-                <div class="col-10">
-                  <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-                </div>
-              </div>
-                <div class="form-group">
-                <label for="example-email-input" class="col-2 col-form-label">Email</label>
-                <div class="col-10">
-                  <input class="form-control" type="email" value="123email@gmail.com" id="example-email-input">
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-4">
-                    <button class="submit-button" type="submit">Create Project</button>          
-                  </div>
-                  <div class="col-md-4"></div>          
-              </div>
-              <br>
-            </div>  
-            <div class="col-md-3"></div>
-        </div>  
+      <h2 class='page-header text-center'>Sign Up Here!</h2>
+      <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+      <form (submit)='onRegisterSubmit()'>
+        <div class="form-group">
+          <label for="name">Username</label>
+          <input type='text' [(ngModel)]="userID" name='userID' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="name">Password</label>
+          <input type='text' [(ngModel)]="password" name='password' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="name">Company Name</label>
+          <input type='text' [(ngModel)]="companyName" name='companyName' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="username">Address Line 1</label>
+          <input type='text' [(ngModel)]="address1" name='address1' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="email">Address Line 2</label>
+          <input type='text' [(ngModel)]="address2" name='address2' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="password">City</label>
+          <input type='password' [(ngModel)]="city" name='city' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="password">State</label>
+          <input type='password' [(ngModel)]="state" name='state' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="password">Country</label>
+          <input type='password' [(ngModel)]="country" name='country' class='form-control'>
+        </div>
+        <div class="form-group">
+          <label for="password">Zip</label>
+          <input type='password' [(ngModel)]="zip" name='zip' class='form-control'>
+        </div>
+        <input type='submit' class='btn btn-primary' value='Submit'>
+      </form>
+      </div>
+      <div class="col-md-3"></div>
+      </div>
     </body>
 </html>
