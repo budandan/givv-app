@@ -1,7 +1,3 @@
-legend {
-    text-align: center;
-}
-
 
 #footer {
     bottom: 0;
