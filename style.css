@@ -1,4 +1,7 @@
 body{
     background-image: url(../media/poverty.jpg);
 }
-head {}
+
+.nav a{
+  background-color: ghostwhite;
+}
