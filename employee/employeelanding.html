@@ -1,4 +1,4 @@
-<!-- EMPLOYEE LANDING PAGE -->
+<!-- EMPLOYER LANDING PROFILE PAGE -->
 <html>
     <head>
       <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
@@ -9,35 +9,30 @@
         <link rel="stylesheet" type="text/css" href="../css/css">
     </head>
     <body>
-        
+
         <!-- EMPLOYER NAVIGATION BAR -->
         <ul class="nav nav-pills">
-            <li class="active"><a href="http://givv.org">Givv.org</a></li>
-            <li><a href="employer.html">View Profile</a></li>
-            <li><a href="projects.html">Select Projects</a></li>
-            <li><a href="#">Company Stats</a></li>
+          <li class="active"><a href="http://givv.org">Givv.org</a></li>
+          <li><a href="#">My Project</a></li>
+          <li><a href="projectchoice.html">Change Project</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Employee Profile<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="personalstatus.html">Personal Stats</a></li>
+              <li><a href="companystatus.html">Company Status</a></li>
+              <li><a href="settings.html">Settings</a></li>
+              <li><a href="feedbackhelp.html">Feedback/Help</a></li>
+            </ul>
+          </li>
         </ul>
-        
-        
-       <!-- PROJECT NAME -->
-        <div class="jumbotron" id="projectpage">
-            <div>
-                <img class="img-circle" alt="Photo of Project" href="#">
-            </div>
-            <H2>[[[CHOSEN PROJECT NAME]]]</H2>
-            <p>[[[CHOSEN PROJECT DESCRIPTION]]]</p>   
-            <br>
-            <p><strong>$#</strong>OF $# GOAL</p>
-            <div class="progress progress-striped">
-                <div class="progress-bar progress-bar-danger" style="width: 10%"></div>
-                <div class="progress-bar progress-bar-success" style="width: 40%"></div>
-            </div>
-            <a href="employer.html" class="btn btn-primary">Change Chosen Project</a>
-            
+
+        <!-- COMPANY NAME -->
+        <div class="jumbotron">
+            <h1>[[[COMPANY NAME]]]</h1>
+            <p>Choose a Project!</p>
         </div>
         
-        
-          
         <!-- FOOTER -->
         <div id="footer">
             <div class="container">
