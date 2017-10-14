@@ -1,3 +1,19 @@
+.jumbotron {
+    padding: 10%;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+#projectpage {
+    text-align: center;
+}
+
+.progress {
+    border-radius: 25px; 
+    height: 25px;
+}
 
 #footer {
     bottom: 0;
