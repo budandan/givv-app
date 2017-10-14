@@ -2,16 +2,12 @@ body{
     background-image: url(../media/poverty.jpg);
 }
 
-.nav a{
-  background-color: ghostwhite;
-}
-
-.active{
-  background-color: mediumturquoise;
+.nav {
+  background-color: white;
 }
 
 #givv-logo {
-  width: 100%;
+  width: 40px;
   border-radius: 5px;
 }
 
